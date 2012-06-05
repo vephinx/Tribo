@@ -15,6 +15,7 @@
 #import "TBStatusViewController.h"
 #import "TBSiteDocument.h"
 #import "TBSite.h"
+#import "TBPost.h"
 #import "TBHTTPServer.h"
 
 const NSEdgeInsets TBAccessoryViewInsets = {
@@ -22,7 +23,7 @@ const NSEdgeInsets TBAccessoryViewInsets = {
 	.right = 4.0
 };
 
-@interface TBSiteWindowController () <NSSplitViewDelegate>
+@interface TBSiteWindowController () <NSSplitViewDelegate, TBSidebarViewControllerDelegate>
 @property (nonatomic, assign) IBOutlet NSView *accessoryView;
 @property (nonatomic, assign) IBOutlet NSMenu *actionMenu;
 @property (nonatomic, assign) IBOutlet NSSplitView *splitView;
@@ -139,6 +140,13 @@ const NSEdgeInsets TBAccessoryViewInsets = {
 	[NSAnimationContext endGrouping];
 }
 
+#pragma mark - Sidebar View Delegate Methods
+
+- (void)postsViewDidSelectPost:(TBPost *)post {
+	NSString *rawPostContents = [NSString stringWithContentsOfURL:post.URL encoding:NSUTF8StringEncoding error:nil];
+	[self.editorView.textStorage setAttributedString:[[NSAttributedString alloc] initWithString:rawPostContents]];
+}
+
 #pragma mark - Split View Delegate Methods
 
 - (BOOL)splitView:(NSSplitView *)splitView shouldAdjustSizeOfSubview:(NSView *)view {
@@ -152,6 +160,7 @@ const NSEdgeInsets TBAccessoryViewInsets = {
 	[super windowDidLoad];
 	
 	self.sidebarViewController = [TBSidebarViewController new];
+	self.sidebarViewController.delegate = self;
 	self.sidebarViewController.document = self.document;
 	self.sidebarViewController.view.autoresizingMask = NSViewWidthSizable|NSViewHeightSizable;
 	
@@ -173,6 +182,8 @@ const NSEdgeInsets TBAccessoryViewInsets = {
 	
 	[self.leftPane addSubview:self.sidebarViewController.view];
 	self.sidebarViewController.view.frame = self.leftPane.bounds;
+	
+	self.editorView.textContainerInset = NSMakeSize(10.0, 11.0);
 	
 }
 

@@ -25,6 +25,7 @@
 
 @protocol TBPostsViewControllerDelegate <NSObject>
 
+@required
 - (void)postsViewDidSelectPost:(TBPost *)post;
 
 @end

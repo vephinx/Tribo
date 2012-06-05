@@ -29,6 +29,7 @@
 
 @implementation TBSidebarViewController
 
+@synthesize delegate = _delegate;
 @synthesize viewControllers = _viewControllers;
 @synthesize selectedViewControllerIndex = _selectedViewControllerIndex;
 @synthesize tabView = _tabView;
@@ -105,7 +106,7 @@
 #pragma mark - Posts View Controller Delegate Methods
 
 - (void)postsViewDidSelectPost:(TBPost *)post {
-	// Bubble this message up the chain.
+	if (self.delegate) [self.delegate postsViewDidSelectPost:post];
 }
 
 @end

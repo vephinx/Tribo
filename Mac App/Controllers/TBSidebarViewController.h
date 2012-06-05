@@ -9,6 +9,18 @@
 #import <Cocoa/Cocoa.h>
 #import "TBViewController.h"
 
+@protocol TBSidebarViewControllerDelegate;
+
+@class TBPost;
+
 @interface TBSidebarViewController : TBViewController
+@property (nonatomic, unsafe_unretained) id <TBSidebarViewControllerDelegate> delegate;
 @property (nonatomic, strong) NSArray *viewControllers;
+@end
+
+@protocol TBSidebarViewControllerDelegate <NSObject>
+
+@required
+- (void)postsViewDidSelectPost:(TBPost *)post;
+
 @end
