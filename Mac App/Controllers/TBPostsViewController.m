@@ -23,6 +23,7 @@
 @implementation TBPostsViewController
 @synthesize document=_document;
 @synthesize postTableView=_postTableView;
+@synthesize delegate=_delegate;
 
 #pragma mark - View Controller Configuration
 
@@ -54,12 +55,16 @@
 	NSString *postURLPrefix = [[formatter stringFromDate:clickedPost.date] stringByAppendingPathComponent:clickedPost.slug];
 	NSURL *postPreviewURL = [NSURL URLWithString:postURLPrefix relativeToURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%d", self.document.server.listeningPort]]];
 	[[NSWorkspace sharedWorkspace] openURL:postPreviewURL];
-	
 }
 
 - (IBAction)revealPost:(id)sender {
 	TBPost *clickedPost = [self.document.site.posts objectAtIndex:[self.postTableView clickedRow]];
 	[[NSWorkspace sharedWorkspace] selectFile:clickedPost.URL.path inFileViewerRootedAtPath:nil];
+}
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification {
+	TBPost *selectedPost = [self.document.site.posts objectAtIndex:[self.postTableView selectedRow]];
+	if (self.delegate) [self.delegate postsViewDidSelectPost:selectedPost];
 }
 
 - (void)tableView:(NSTableView *)tableView shouldDeleteRows:(NSIndexSet *)rowIndexes {

@@ -1,0 +1,53 @@
+editor:
+	foreground: 000000
+	background: ffffff
+
+# General text styles #
+
+EMPH:
+	font-style: italic
+
+STRONG:
+	font-style: bold
+
+# Headers #
+
+H1:
+	font-family: Helvetica
+	font-style: bold
+	font-size: 22
+
+H2:
+	font-family: Helvetica
+	font-style: bold
+	font-size: 20
+
+H3:
+	font-family: Helvetica
+	font-style: bold
+	font-size: 18
+
+H4:
+	font-family: Helvetica
+	font-style: bold
+	font-size: 16
+
+H5:
+	font-family: Helvetica
+	font-style: bold
+	font-size: 14
+
+H6:
+	font-family: Helvetica
+	font-style: bold
+	font-size: 12
+
+# External sources #
+
+LINK:
+	foreground: a90d91
+
+# HTML #
+
+HTML_ENTITY:
+	foreground: 7f7f7f

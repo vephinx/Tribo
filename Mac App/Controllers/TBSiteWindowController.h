@@ -7,18 +7,11 @@
 //  See the included License.md file.
 //
 
-@class TBViewController, TBAddPostSheetController;
+@class TBViewController, TBSidebarViewController;
 
 @interface TBSiteWindowController : NSWindowController <NSWindowDelegate>
-@property (nonatomic, strong) NSArray *viewControllers;
-@property (readonly) TBViewController *selectedViewController;
-@property (nonatomic, assign) NSUInteger selectedViewControllerIndex;
 
-- (IBAction)switchToPosts:(id)sender;
-- (IBAction)switchToTemplates:(id)sender;
-- (IBAction)switchToSources:(id)sender;
-
-- (IBAction)showAddPostSheet:(id)sender;
+@property (nonatomic, strong) TBSidebarViewController *sidebarViewController;
 
 - (IBAction)showActionMenu:(id)sender;
 - (IBAction)preview:(id)sender;

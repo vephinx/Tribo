@@ -8,6 +8,7 @@
 
 #import "TBSiteDocument+Scripting.h"
 #import "TBSiteWindowController.h"
+#import "TBSidebarViewController.h"
 #import "TBPostsViewController.h"
 #import "TBSite.h"
 #import "TBHTTPServer.h"
@@ -20,8 +21,9 @@
 	[command suspendExecution];
 	
 	TBSiteWindowController *windowController = [self.windowControllers objectAtIndex:0];
+	TBSidebarViewController *sidebarViewController = windowController.sidebarViewController;
 	TBPostsViewController *postsViewController = nil;
-	for (TBViewController *viewController in windowController.viewControllers) {
+	for (TBViewController *viewController in sidebarViewController.viewControllers) {
 		if ([viewController class] == [TBPostsViewController class]) {
 			postsViewController = (TBPostsViewController *)viewController;
 			continue;
@@ -43,8 +45,9 @@
 	if (!self.server.isRunning) return;
 	
 	TBSiteWindowController *windowController = [self.windowControllers objectAtIndex:0];
+	TBSidebarViewController *sidebarViewController = windowController.sidebarViewController;
 	TBPostsViewController *postsViewController = nil;
-	for (TBViewController *viewController in windowController.viewControllers) {
+	for (TBViewController *viewController in sidebarViewController.viewControllers) {
 		if ([viewController class] == [TBPostsViewController class]) {
 			postsViewController = (TBPostsViewController *)viewController;
 			continue;

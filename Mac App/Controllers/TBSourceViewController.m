@@ -1,20 +1,20 @@
 //
-//  TBSourceViewControllerViewController.m
+//  TBSourceViewController.m
 //  Tribo
 //
 //  Created by Samuel Goodwin on 2/22/12.
 //  Copyright (c) 2012 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import "TBSourceViewControllerViewController.h"
+#import "TBSourceViewController.h"
 #import "TBAsset.h"
 
-@implementation TBSourceViewControllerViewController
+@implementation TBSourceViewController
 @synthesize outlineView = _outlineView;
 @synthesize assetTree = _assetTree;
 
 - (NSString *)defaultNibName {
-	return @"TBSourceViewControllerView";
+	return @"TBSourceView";
 }
 
 - (NSString *)title {

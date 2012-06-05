@@ -17,6 +17,9 @@
 		4A2E6E4015058D8C000397B4 /* TBFTPPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E6E3F15058D8C000397B4 /* TBFTPPublisher.m */; };
 		4A2E84CD14FDD969008FE2C4 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E84CC14FDD969008FE2C4 /* rsync */; };
 		4A30E87B144B8763001DDBAE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4A30E879144B86F4001DDBAE /* Credits.rtf */; };
+		4A34EDBC156E1CD6005112E9 /* Tribo.style in Resources */ = {isa = PBXBuildFile; fileRef = 4A34EDBB156E1CD6005112E9 /* Tribo.style */; };
+		4A34EDD11570B37B005112E9 /* TBSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34EDCF1570B37B005112E9 /* TBSidebarViewController.m */; };
+		4A34EDD21570B37B005112E9 /* TBSidebarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34EDD01570B37B005112E9 /* TBSidebarView.xib */; };
 		4A36B99115124DCB00A3D79A /* TBStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A36B99015124DCB00A3D79A /* TBStatusView.m */; };
 		4A3ED15F145C6FDC00AE9BF3 /* TBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ED15E145C6FDC00AE9BF3 /* TBTabView.m */; };
 		4A43019F1518287C003EA175 /* TBNewSiteSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43019D1518287C003EA175 /* TBNewSiteSheetController.m */; };
@@ -149,8 +152,8 @@
 		9B6B669814F3480800759DC3 /* TBTemplatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6B669614F3480800759DC3 /* TBTemplatesView.xib */; };
 		9B6B669C14F3546900759DC3 /* TBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B669B14F3546900759DC3 /* TBAsset.m */; };
 		9B6B669D14F3546C00759DC3 /* TBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B669B14F3546900759DC3 /* TBAsset.m */; };
-		9BEF1C7A14F5CFCF0072B295 /* TBSourceViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1C7814F5CFCF0072B295 /* TBSourceViewControllerViewController.m */; };
-		9BEF1C7B14F5CFCF0072B295 /* TBSourceViewControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1C7914F5CFCF0072B295 /* TBSourceViewControllerView.xib */; };
+		9BEF1C7A14F5CFCF0072B295 /* TBSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1C7814F5CFCF0072B295 /* TBSourceViewController.m */; };
+		9BEF1C7B14F5CFCF0072B295 /* TBSourceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1C7914F5CFCF0072B295 /* TBSourceView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +200,10 @@
 		4A2E6E3F15058D8C000397B4 /* TBFTPPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBFTPPublisher.m; sourceTree = "<group>"; };
 		4A2E84CC14FDD969008FE2C4 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
 		4A30E879144B86F4001DDBAE /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		4A34EDBB156E1CD6005112E9 /* Tribo.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tribo.style; sourceTree = "<group>"; };
+		4A34EDCE1570B37B005112E9 /* TBSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSidebarViewController.h; sourceTree = "<group>"; };
+		4A34EDCF1570B37B005112E9 /* TBSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSidebarViewController.m; sourceTree = "<group>"; };
+		4A34EDD01570B37B005112E9 /* TBSidebarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBSidebarView.xib; sourceTree = "<group>"; };
 		4A36B98F15124DCB00A3D79A /* TBStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBStatusView.h; sourceTree = "<group>"; };
 		4A36B99015124DCB00A3D79A /* TBStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBStatusView.m; sourceTree = "<group>"; };
 		4A3ED15D145C6FDC00AE9BF3 /* TBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TBTabView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -361,9 +368,9 @@
 		9B6B669614F3480800759DC3 /* TBTemplatesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBTemplatesView.xib; sourceTree = "<group>"; };
 		9B6B669A14F3546900759DC3 /* TBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAsset.h; sourceTree = "<group>"; };
 		9B6B669B14F3546900759DC3 /* TBAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAsset.m; sourceTree = "<group>"; };
-		9BEF1C7714F5CFCF0072B295 /* TBSourceViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSourceViewControllerViewController.h; sourceTree = "<group>"; };
-		9BEF1C7814F5CFCF0072B295 /* TBSourceViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSourceViewControllerViewController.m; sourceTree = "<group>"; };
-		9BEF1C7914F5CFCF0072B295 /* TBSourceViewControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBSourceViewControllerView.xib; sourceTree = "<group>"; };
+		9BEF1C7714F5CFCF0072B295 /* TBSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSourceViewController.h; sourceTree = "<group>"; };
+		9BEF1C7814F5CFCF0072B295 /* TBSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSourceViewController.m; sourceTree = "<group>"; };
+		9BEF1C7914F5CFCF0072B295 /* TBSourceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBSourceView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,8 +424,8 @@
 				4A7557BE1436F4D70040A10C /* CocoaHTTPServer */,
 				4A9ED51A15069CD6009C5754 /* CurlHandle */,
 				4A72F1271436868B00A164E9 /* Sundown */,
-				4A2E84CB14FDD969008FE2C4 /* Rsync */,
 				4A72F125143155AE00A164E9 /* GRMustache */,
+				4A2E84CB14FDD969008FE2C4 /* Rsync */,
 				4A8829441438EB9F00EBBD7E /* UKFileWatcher */,
 			);
 			name = Dependencies;
@@ -433,6 +440,16 @@
 			name = Rsync;
 			path = Dependencies/Rsync;
 			sourceTree = SOURCE_ROOT;
+		};
+		4A34EDCD1570B343005112E9 /* TBSidebarView */ = {
+			isa = PBXGroup;
+			children = (
+				4A34EDCE1570B37B005112E9 /* TBSidebarViewController.h */,
+				4A34EDCF1570B37B005112E9 /* TBSidebarViewController.m */,
+				4A34EDD01570B37B005112E9 /* TBSidebarView.xib */,
+			);
+			name = TBSidebarView;
+			sourceTree = "<group>";
 		};
 		4A43019B15182854003EA175 /* TBNewSiteSheet */ = {
 			isa = PBXGroup;
@@ -452,13 +469,14 @@
 				4AAC8E411451EF9200AE978A /* TBViewController.h */,
 				4AAC8E421451EF9200AE978A /* TBViewController.m */,
 				4AEF0C5114A183CD00F0E021 /* TBSiteWindow */,
+				4A34EDCD1570B343005112E9 /* TBSidebarView */,
 				4A43019B15182854003EA175 /* TBNewSiteSheet */,
-				4A57A568150F8BB000DACDBC /* TBStatusViewController */,
+				4A57A568150F8BB000DACDBC /* TBStatusView */,
 				4AE50FA614F98CB600FCA39C /* TBSettingsSheet */,
 				4AEF0C5014A183C200F0E021 /* TBPostsView */,
 				4AEF0C5214A183E400F0E021 /* TBAddPostSheet */,
 				9BEF1C7514F5CD290072B295 /* TBTemplatesViewController */,
-				9BEF1C7C14F5CFD60072B295 /* TBSourceVIewController */,
+				9BEF1C7C14F5CFD60072B295 /* TBSourceViewController */,
 				4AE91C7314FF16F300499469 /* TBPublishSheet */,
 			);
 			path = Controllers;
@@ -478,6 +496,7 @@
 				4AA29D0114E42ED5005E341F /* Tribo.entitlements */,
 				4A8696491437BE3400204482 /* Info.plist */,
 				4AE50F9714F95E0B00FCA39C /* LiveReload Snippet.html */,
+				4A34EDBB156E1CD6005112E9 /* Tribo.style */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -493,7 +512,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4A57A568150F8BB000DACDBC /* TBStatusViewController */ = {
+		4A57A568150F8BB000DACDBC /* TBStatusView */ = {
 			isa = PBXGroup;
 			children = (
 				4A57A563150F8BAA00DACDBC /* TBStatusViewController.h */,
@@ -506,7 +525,7 @@
 				4AB2796515154796009D7F93 /* TBShadowedButtonCell.h */,
 				4AB2796615154796009D7F93 /* TBShadowedButtonCell.m */,
 			);
-			name = TBStatusViewController;
+			name = TBStatusView;
 			sourceTree = "<group>";
 		};
 		4A6DC8DC1430203B00CB5025 = {
@@ -876,14 +895,14 @@
 			name = TBTemplatesViewController;
 			sourceTree = "<group>";
 		};
-		9BEF1C7C14F5CFD60072B295 /* TBSourceVIewController */ = {
+		9BEF1C7C14F5CFD60072B295 /* TBSourceViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9BEF1C7714F5CFCF0072B295 /* TBSourceViewControllerViewController.h */,
-				9BEF1C7814F5CFCF0072B295 /* TBSourceViewControllerViewController.m */,
-				9BEF1C7914F5CFCF0072B295 /* TBSourceViewControllerView.xib */,
+				9BEF1C7714F5CFCF0072B295 /* TBSourceViewController.h */,
+				9BEF1C7814F5CFCF0072B295 /* TBSourceViewController.m */,
+				9BEF1C7914F5CFCF0072B295 /* TBSourceView.xib */,
 			);
-			name = TBSourceVIewController;
+			name = TBSourceViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -984,7 +1003,7 @@
 				4ADE327C14E21B3A0059D03C /* Tribo.sdef in Resources */,
 				4A43C23514EAB89600D1CC7B /* MainMenu.xib in Resources */,
 				9B6B669814F3480800759DC3 /* TBTemplatesView.xib in Resources */,
-				9BEF1C7B14F5CFCF0072B295 /* TBSourceViewControllerView.xib in Resources */,
+				9BEF1C7B14F5CFCF0072B295 /* TBSourceView.xib in Resources */,
 				4AE50F9214F8BB3900FCA39C /* livereload.js in Resources */,
 				4AE50FE114FBD4E100FCA39C /* TBSettingsSheet.xib in Resources */,
 				4A2E84CD14FDD969008FE2C4 /* rsync in Resources */,
@@ -996,6 +1015,8 @@
 				4AB27977151557D7009D7F93 /* Stop@2x.png in Resources */,
 				4A4301A01518287C003EA175 /* TBNewSiteSheet.xib in Resources */,
 				4A17D451156C769F00789C3D /* Default.tribo in Resources */,
+				4A34EDBC156E1CD6005112E9 /* Tribo.style in Resources */,
+				4A34EDD21570B37B005112E9 /* TBSidebarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,7 +1114,7 @@
 				4ADE328514E21C450059D03C /* TBSiteDocument+Scripting.m in Sources */,
 				9B6B669714F3480800759DC3 /* TBTemplatesViewController.m in Sources */,
 				9B6B669C14F3546900759DC3 /* TBAsset.m in Sources */,
-				9BEF1C7A14F5CFCF0072B295 /* TBSourceViewControllerViewController.m in Sources */,
+				9BEF1C7A14F5CFCF0072B295 /* TBSourceViewController.m in Sources */,
 				4AE50F8114F882A300FCA39C /* TBSocketConnection.m in Sources */,
 				4AE50F8514F88A6C00FCA39C /* TBWebSocket.m in Sources */,
 				4AE50F8814F8906400FCA39C /* TBHTTPServer.m in Sources */,
@@ -1113,6 +1134,7 @@
 				4AB2796015152660009D7F93 /* TBShadowedTextFieldCell.m in Sources */,
 				4AB2796715154796009D7F93 /* TBShadowedButtonCell.m in Sources */,
 				4A43019F1518287C003EA175 /* TBNewSiteSheetController.m in Sources */,
+				4A34EDD11570B37B005112E9 /* TBSidebarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
