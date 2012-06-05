@@ -30,7 +30,6 @@ const NSEdgeInsets TBAccessoryViewInsets = {
 @property (nonatomic, assign) IBOutlet NSView *leftPane;
 @property (nonatomic, assign) IBOutlet NSView *rightPane;
 @property (nonatomic, assign) IBOutlet NSTextView *editorView;
-@property (nonatomic, strong) HGMarkdownHighlighter *highlighter;
 @property (nonatomic, strong) TBAddPostSheetController *addPostSheetController;
 @property (nonatomic, strong) TBSettingsSheetController *settingsSheetController;
 @property (nonatomic, strong) TBPublishSheetController *publishSheetController;
@@ -48,7 +47,6 @@ const NSEdgeInsets TBAccessoryViewInsets = {
 @synthesize rightPane=_rightPane;
 @synthesize editorView=_editorView;
 @synthesize sidebarViewController=_sidebarViewController;
-@synthesize highlighter=_highlighter;
 @synthesize addPostSheetController=_addPostSheetController;
 @synthesize settingsSheetController=_settingsSheetController;
 @synthesize publishSheetController=_publishSheetController;
